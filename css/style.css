@@ -310,7 +310,6 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(94, 114, 228, 0.4);
 }
-}
 
 .submit-btn:active {
     transform: translateY(-1px);
@@ -587,6 +586,23 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+/* tighter rules for small phones */
+@media (max-width: 480px) {
+    .hero h1 { font-size: 1.4rem; }
+    .hero p { font-size: 0.95rem; }
+    .cta-button { padding: 12px 30px; font-size: 1rem; }
+
+    nav ul li { margin: 8px 0; }
+
+    .contact-form-section,
+    .contact-social-section { padding: 20px 15px; }
+
+    footer { font-size: 0.85rem; padding: 20px 10px; }
+}
+
+/* make images and svg responsive */
+img, svg { max-width: 100%; height: auto; }
 
 /* Page Icons Styling */
 .page-icon {

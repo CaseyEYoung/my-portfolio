@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <svg class="hero-illustration" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 200px; margin-bottom: 20px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));">
+            <defs>
+                <linearGradient id="heroGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.2" />
+                    <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+                </linearGradient>
+                <radialGradient id="heroGrad2">
+                    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.15" />
+                    <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+                </radialGradient>
+                <style>
+                    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-15px); } }
+                    .float1 { animation: float 4s ease-in-out infinite; }
+                    .float2 { animation: float 5s ease-in-out infinite 0.5s; }
+                    .float3 { animation: float 4.5s ease-in-out infinite 1s; }
+                </style>
+            </defs>
+            <circle cx="250" cy="250" r="200" fill="url(#heroGrad2)" opacity="0.6"/>
+            <g transform="translate(150, 120)">
+                <rect x="0" y="60" width="200" height="120" rx="8" fill="#ffffff" opacity="0.9" stroke="#ffffff" stroke-width="2"/>
+                <rect x="10" y="70" width="180" height="95" fill="#4ECDC4" rx="4"/>
+                <line x1="20" y1="85" x2="180" y2="85" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+                <line x1="20" y1="100" x2="160" y2="100" stroke="#ffffff" stroke-width="1.5" opacity="0.4"/>
+                <line x1="20" y1="112" x2="170" y2="112" stroke="#ffffff" stroke-width="1.5" opacity="0.4"/>
+                <rect x="20" y="175" width="160" height="30" fill="#ffffff" opacity="0.8" rx="3"/>
+                <circle cx="30" cy="185" r="2.5" fill="#4ECDC4"/>
+                <circle cx="50" cy="185" r="2.5" fill="#4ECDC4"/>
+                <circle cx="70" cy="185" r="2.5" fill="#4ECDC4"/>
+                <circle cx="90" cy="185" r="2.5" fill="#4ECDC4"/>
+            </g>
+            <g transform="translate(320, 180)" class="float1">
+                <circle cx="0" cy="0" r="35" fill="#FF6B6B" opacity="0.85"/>
+                <text x="0" y="12" font-size="28" text-anchor="middle" fill="#ffffff" font-weight="bold">✨</text>
+            </g>
+            <g transform="translate(380, 280)" class="float2">
+                <circle cx="0" cy="0" r="30" fill="#FFE66D" opacity="0.85"/>
+                <text x="0" y="10" font-size="24" text-anchor="middle" fill="#ffffff" font-weight="bold">💡</text>
+            </g>
+            <g transform="translate(100, 320)" class="float3">
+                <circle cx="0" cy="0" r="32" fill="#4ECDC4" opacity="0.85"/>
+                <text x="0" y="11" font-size="26" text-anchor="middle" fill="#ffffff" font-weight="bold">🚀</text>
+            </g>
+            <path d="M 80 200 Q 150 180 220 200" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3" stroke-dasharray="5,5"/>
+            <path d="M 280 320 Q 350 310 400 340" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3" stroke-dasharray="5,5"/>
+        </svg>
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm Casey Young, a Polytech student and creative developer. Let's build something amazing together!</p>
+            <a href="portfolio.html" class="cta-button">View My Work >></a>
+        </div>
+    </main>
+
+    <footer>© 2026 Casey Young | <a href="mailto:kcistrouble@yahoo.co.nz">kcistrouble@yahoo.co.nz</a> | Built with HTML & CSS</footer>
+</body>
+</html>

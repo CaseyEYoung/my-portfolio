@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <svg class="page-icon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Colorful Envelope/Message icon -->
+            <defs>
+                <linearGradient id="envelopeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#5e72e4;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#825ee4;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect x="30" y="50" width="140" height="100" rx="10" fill="url(#envelopeGrad)" opacity="0.15" stroke="url(#envelopeGrad)" stroke-width="3"/>
+            <path d="M 30 50 L 100 110 L 170 50" fill="none" stroke="url(#envelopeGrad)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M 30 50 L 100 105 L 170 50 L 170 150 L 30 150 Z" fill="none" stroke="url(#envelopeGrad)" stroke-width="2.5" stroke-linejoin="round"/>
+            <line x1="100" y1="110" x2="100" y2="150" stroke="#ff6b6b" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="85" cy="75" r="5" fill="#4ecdc4"/>
+            <circle cx="115" cy="75" r="5" fill="#ffe66d"/>
+        </svg>
+        <section class="contact-header">
+            <h1>Get In Touch</h1>
+            <p>Have a project or question? I'd love to hear from you. Send me a message and I'll get back to you as soon as possible.</p>
+        </section>
+
+        <section class="contact-container">
+            <section class="contact-form-section">
+                <h2>Send me a message</h2>
+                <p class="form-note">Hi, I'm <strong>Casey Young</strong> – use the form below and your message will be sent directly to me.</p>
+                <!-- simple mailto form; note that some browsers may open the user's mail client -->
+                <form class="contact-form" action="mailto:kcistrouble@yahoo.co.nz?subject=Message%20for%20Casey%20Young" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message here..." rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+
+            <section class="contact-social-section">
+                <h2>Connect With Me</h2>
+                <p>Feel free to reach out on any of these platforms:</p>
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-link linkedin">LinkedIn</a></li>
+                    <li><a href="https://github.com/yourprofile" target="_blank" class="social-link github">GitHub</a></li>
+                    <li><a href="mailto:kcistrouble@yahoo.co.nz" class="social-link email">Email</a></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer>© 2026 Casey Young | <a href="mailto:kcistrouble@yahoo.co.nz">kcistrouble@yahoo.co.nz</a> | Built with HTML & CSS</footer>
+</body>
+</html>
